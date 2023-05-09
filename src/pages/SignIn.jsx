@@ -22,7 +22,22 @@ export default function SignIn() {
         </div>
         <div className='w-full md:w-[67%] lg:w-[40%] lg:ml-20'>
           <form>
-            <input type='email' id='email' value={email} onChange={onChange}/>
+            <input
+            className='w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out'
+            type='email' 
+            id='email' 
+            value={email}
+            onChange={onChange}
+            placeholder='Email Address'/>
+            <div className="relative mb-6 top-3">
+              <input
+              className='w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out'
+              type='password' 
+              id='password' 
+              value={password}
+              onChange={onChange}
+              placeholder='Password'/>
+            </div>
           </form>
         </div>
       </div>
